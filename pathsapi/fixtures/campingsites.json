@@ -1,0 +1,475 @@
+[
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 1,
+    "fields": {
+      "name": "Beauty Creek Campground",
+      "trail": 1,
+      "distance": "0.8 miles away",
+      "fees": "$24",
+      "site": "https://www.recreation.gov/camping/campgrounds/233267"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 2,
+    "fields": {
+      "name": "Beauty Bay Recreational Site",
+      "trail": 1,
+      "distance": "2.3 miles away",
+      "fees": "No fees",
+      "site": "https://www.blm.gov/visit/beauty-bay-recreation-site"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 3,
+    "fields": {
+      "name": "Camp Coeur D'Alene",
+      "trail": 1,
+      "distance": "2.3 miles away",
+      "fees": "$39",
+      "site": "http://campcoeurdalene.com/"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 4,
+    "fields": {
+      "name": "Mokins Bay Campground",
+      "trail": 2,
+      "distance": "23.2 miles away",
+      "fees": "$32",
+      "site": "https://www.recreation.gov/camping/campgrounds/233270"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 5,
+    "fields": {
+      "name": "Iron Creek Campground",
+      "trail": 3,
+      "distance": "0.2 miles away",
+      "fees": "$18",
+      "site": "https://www.recreation.gov/camping/campgrounds/10165385"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 6,
+    "fields": {
+      "name": "Elk Creek Campground",
+      "trail": 3,
+      "distance": "5.5 miles away",
+      "fees": "$100",
+      "site": "https://www.recreation.gov/camping/campgrounds/232042"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 7,
+    "fields": {
+      "name": "Farragut State Park",
+      "trail": 6,
+      "distance": "17 miles away",
+      "fees": "$31",
+      "site": "https://idahostateparks.reserveamerica.com/campinghome.page"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 8,
+    "fields": {
+      "name": "Glacier view Campground",
+      "trail": 4,
+      "distance": "0.8 miles away",
+      "fees": "$22",
+      "site": "https://www.recreation.gov/camping/campgrounds/232050"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 9,
+    "fields": {
+      "name": "Redfish Outlet Campground",
+      "trail": 4,
+      "distance": "0.8 miles away",
+      "fees": "$24",
+      "site": "https://www.recreation.gov/camping/campgrounds/232358"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 10,
+    "fields": {
+      "name": "Eightmile Campground",
+      "trail": 5,
+      "distance": "5.3 miles away",
+      "fees": "$32",
+      "site": "https://www.recreation.gov/camping/campgrounds/121440"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 11,
+    "fields": {
+      "name": "Bridge Creek Campground",
+      "trail": 5,
+      "distance": "3.6 miles away",
+      "fees": "$20",
+      "site": "https://www.fs.usda.gov/recarea/okawen/recreation/hiking/recarea/?recid=58667&actid=33"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 12,
+    "fields": {
+      "name": "Avalanche Campground",
+      "trail": 7,
+      "distance": "0.3 miles away",
+      "fees": "$20",
+      "site": "https://www.recreation.gov/camping/campgrounds/258796"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 13,
+    "fields": {
+      "name": "Sprague Creek Campground",
+      "trail": 7,
+      "distance": "6.7 miles away",
+      "fees": "$20",
+      "site": "https://www.recreation.gov/camping/campgrounds/258795"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 14,
+    "fields": {
+      "name": "Many Glacier Campground",
+      "trail": 8,
+      "distance": "0.3 miles away",
+      "fees": "$20",
+      "site": "https://www.recreation.gov/camping/campgrounds/251869"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 15,
+    "fields": {
+      "name": "Lower Stevens Lake",
+      "trail": 9,
+      "distance": "On the trail",
+      "fees": "No fees",
+      "site": "https://www.fs.usda.gov/recarea/cnnf/recarea/?recid=27887"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 16,
+    "fields": {
+      "name": "Liberty Lake Regional Park Campground",
+      "trail": 10,
+      "distance": "10 miles",
+      "fees": "$32",
+      "site": "https://www.spokanecounty.org/Facilities/Facility/Details/-117"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 17,
+    "fields": {
+      "name": "Liberty Lake Regional Park Campground",
+      "trail": 11,
+      "distance": "10 miles",
+      "fees": "$32",
+      "site": "https://www.spokanecounty.org/Facilities/Facility/Details/-117"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 18,
+    "fields": {
+      "name": "Spokane KOA Journey",
+      "trail": 12,
+      "distance": "4.3 miles",
+      "fees": "$51",
+      "site": "https://koa.com/campgrounds/spokane/?gclid=Cj0KCQjwlPWgBhDHARIsAH2xdNey4dZo6rjCX6_NNcCm7ilcv9DFVv1u_EeaIglh2Q-3xdLMJkpbh-QaAkUSEALw_wcB"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 19,
+    "fields": {
+      "name": "Navigation Campground",
+      "trail": 13,
+      "distance": "9.1 miles",
+      "fees": "No fees",
+      "site": "https://www.fs.usda.gov/recarea/ipnf/recarea/?recid=6775"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 20,
+    "fields": {
+      "name": "Ripple Cabin",
+      "trail": 14,
+      "distance": "2.0 miles",
+      "fees": "$10 per person",
+      "site": "http://www.sitesandtrailsbc.ca/search/search-result.aspx?site=REC5082&type=Site"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 21,
+    "fields": {
+      "name": "Protection Mountain Campground",
+      "trail": 15,
+      "distance": "12.4 miles",
+      "fees": "$21.50",
+      "site": "https://parks.canada.ca/pn-np/ab/banff/activ/camping#protection"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 22,
+    "fields": {
+      "name": "Lake Louise Hard-sided Campground",
+      "trail": 15,
+      "distance": "3.5 miles",
+      "fees": "$29.25",
+      "site": "https://reservation.pc.gc.ca/?_ga=2.110244291.737513845.1679597133-1047281856.1679597133"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 23,
+    "fields": {
+      "name": "Lone Fir Campground",
+      "trail": 16,
+      "distance": "10.5 miles",
+      "fees": "$12",
+      "site": "https://www.fs.usda.gov/recarea/okawen/recarea/?recid=59303"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 24,
+    "fields": {
+      "name": "Colonial Creek Campground",
+      "trail": 16,
+      "distance": "27.6 miles",
+      "fees": "$24",
+      "site": "https://www.recreation.gov/camping/campgrounds/246855"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 25,
+    "fields": {
+      "name": "Gold Basin Recreation Area",
+      "trail": 17,
+      "distance": "0.8 miles",
+      "fees": "$33",
+      "site": "https://www.recreation.gov/camping/campgrounds/232051"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 26,
+    "fields": {
+      "name": "Verlot Campground",
+      "trail": 17,
+      "distance": "1.9 miles",
+      "fees": "$38",
+      "site": "https://www.recreation.gov/camping/campgrounds/232120"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 27,
+    "fields": {
+      "name": "Stawamus Chief Provincial Park Campground",
+      "trail": 18,
+      "distance": "0.9 miles",
+      "fees": "$10 per person",
+      "site": "https://seatoskyparks.com/parks/stawamus-chief/"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 28,
+    "fields": {
+      "name": "Mount Seymour Park",
+      "trail": 19,
+      "distance": "2.9 miles",
+      "fees": "No fees",
+      "site": "https://bcparks.ca/mount-seymour-park/"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 29,
+    "fields": {
+      "name": "Cypress Provincial Park",
+      "trail": 20,
+      "distance": "17.3 miles",
+      "fees": "$10-30",
+      "site": "https://bcparks.ca/cypress-park/"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 30,
+    "fields": {
+      "name": "Boulder Creek Campground",
+      "trail": 21,
+      "distance": "21.7 miles",
+      "fees": "$38",
+      "site": "https://www.recreation.gov/camping/campgrounds/232023"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 31,
+    "fields": {
+      "name": "Fairholme Campground",
+      "trail": 21,
+      "distance": "7.1 miles",
+      "fees": "$24",
+      "site": "https://www.recreation.gov/camping/campgrounds/259084"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 32,
+    "fields": {
+      "name": "White River Campground",
+      "trail": 22,
+      "distance": "11.2 miles",
+      "fees": "$20",
+      "site": "https://visitrainier.com/white-river-campground/"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 33,
+    "fields": {
+      "name": "Wyeth Campground",
+      "trail": 23,
+      "distance": "11.1 miles",
+      "fees": "$20",
+      "site": "https://www.recreation.gov/camping/campgrounds/122940"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 34,
+    "fields": {
+      "name": "Eagle Creek Campground",
+      "trail": 23,
+      "distance": "5.9 miles",
+      "fees": "$15",
+      "site": "https://www.recreation.gov/camping/campgrounds/122890"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 35,
+    "fields": {
+      "name": "Smith Rock State Park",
+      "trail": 24,
+      "distance": "0.5 miles",
+      "fees": "$8 per person",
+      "site": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=36"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 36,
+    "fields": {
+      "name": "Johnston Canyon Campground",
+      "trail": 25,
+      "distance": "on site",
+      "fees": "$29.25",
+      "site": "https://parks.canada.ca/pn-np/ab/banff/activ/camping#johnstoncanyon"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 37,
+    "fields": {
+      "name": "Pass Creek Campground",
+      "trail": 26,
+      "distance": "3.8 miles",
+      "fees": "$20",
+      "site": "https://passcreekcampground.weebly.com/"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 38,
+    "fields": {
+      "name": "Bow River Campground",
+      "trail": 27,
+      "distance": "5.7 miles",
+      "fees": "$33",
+      "site": "https://www.albertaparks.ca/parks/kananaskis/bow-valley-pp/information-facilities/camping/bow-river/"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 39,
+    "fields": {
+      "name": "Protection Mountain Campground",
+      "trail": 28,
+      "distance": "12.4 miles",
+      "fees": "$21.50",
+      "site": "https://parks.canada.ca/pn-np/ab/banff/activ/camping#protection"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 40,
+    "fields": {
+      "name": "Lake Louise Hard-sided Campground",
+      "trail": 28,
+      "distance": "3.04 miles",
+      "fees": "$29.25",
+      "site": "https://parks.canada.ca/pn-np/ab/banff/activ/camping#lakelouisehard"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 41,
+    "fields": {
+      "name": "Garibaldi Lake",
+      "trail": 29,
+      "distance": "on site",
+      "fees": "$10 per person",
+      "site": "https://bcparks.ca/garibaldi-park/"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 42,
+    "fields": {
+      "name": "Sam Owen Campground",
+      "trail": 30,
+      "distance": "11.1 miles",
+      "fees": "$34",
+      "site": "https://www.recreation.gov/camping/campgrounds/232202"
+    }
+  },
+  {
+    "model": "pathsapi.campingsite",
+    "pk": 43,
+    "fields": {
+      "name": "Big Eddy Campground",
+      "trail": 30,
+      "distance": "17.6 miles",
+      "fees": "No fees",
+      "site": "https://www.fs.usda.gov/recarea/boise/recarea/?recid=5033#:~:text=Big%20Eddy%20Campground%20is%20located,and%20kayaking%20are%20popular%20activities."
+    }
+  }
+]
