@@ -1,0 +1,15 @@
+[
+    {
+        "model": "pathsapi.review",
+        "pk": 1,
+        "fields": {
+            "title": "Snowy days",
+            "trail": 15,
+            "user": 2,
+            "description": "The hike was not too bad and the view was beautiful!",
+            "rating": 5,
+            "img": "https://greatruns.com/wp-content/uploads/2020/09/Mineral-Ridge-BLM-Idaho.jpg",
+            "date": "2023-03-08"
+        }
+    }
+]

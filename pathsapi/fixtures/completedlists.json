@@ -1,0 +1,47 @@
+[
+    {
+        "model": "pathsapi.completedlist",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "trail": 15,
+            "date": "2023-03-08"
+        }
+    },
+    {
+        "model": "pathsapi.completedlist",
+        "pk": 2,
+        "fields": {
+            "user": 3,
+            "trail": 1,
+            "date": "2023-03-08"
+        }
+    },
+    {
+        "model": "pathsapi.completedlist",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "trail": 14,
+            "date": "2023-03-08"
+        }
+    },
+    {
+        "model": "pathsapi.completedlist",
+        "pk": 4,
+        "fields": {
+            "user": 2,
+            "trail": 21,
+            "date": "2023-03-08"
+        }
+    },
+    {
+        "model": "pathsapi.completedlist",
+        "pk": 1,
+        "fields": {
+            "user": 4,
+            "trail": 2,
+            "date": "2023-03-08"
+        }
+    }
+]
