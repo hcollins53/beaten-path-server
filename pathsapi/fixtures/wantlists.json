@@ -1,0 +1,42 @@
+[
+    {
+        "model": "pathsapi.wantlist",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "trail": 8
+        }
+    },
+    {
+        "model": "pathsapi.wantlist",
+        "pk": 2,
+        "fields": {
+            "user": 4,
+            "trail": 5
+        }
+    },
+    {
+        "model": "pathsapi.wantlist",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "trail": 11
+        }
+    },
+    {
+        "model": "pathsapi.wantlist",
+        "pk": 4,
+        "fields": {
+            "user": 2,
+            "trail": 6
+        }
+    },
+    {
+        "model": "pathsapi.wantlist",
+        "pk": 1,
+        "fields": {
+            "user": 4,
+            "trail": 7
+        }
+    }
+]

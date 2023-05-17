@@ -18,13 +18,16 @@ from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
-from pathsapi.views import login_user, register_user, TrailView, CampingSiteView, WantListView, CompletedListView
+from pathsapi.views import login_user, register_user, TrailView, CampingSiteView, WantListView, CompletedListView, ReviewView, UserProfileListView, MessageView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'trails', TrailView, 'trail')
 router.register(r'campingsites', CampingSiteView, 'campingsite')
 router.register(r'wantlists', WantListView, 'wantlist')
 router.register(r'completedlists', CompletedListView, 'completedlist')
+router.register(r'reviews', ReviewView, 'review')
+router.register(r'userprofiles', UserProfileListView, 'userprofile')
+router.register(r'messages', MessageView, 'message')
 urlpatterns = [
     path('register', register_user),
     path('login', login_user),

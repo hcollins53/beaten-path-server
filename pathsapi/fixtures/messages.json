@@ -1,0 +1,12 @@
+[
+    {
+        "model": "pathsapi.message",
+        "pk": 1,
+        "fields": {
+            "sender": "5",
+            "receiver": "3",
+            "body": "Hey! Let's go on a hike soon",
+            "date": "2023-03-10"
+        }
+    }
+]
