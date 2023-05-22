@@ -27,6 +27,11 @@ class CompletedListView(ViewSet):
             Response -- JSON serialized list of game types
         """
         completes = Completedlist.objects.all()
+        user_id = request.query_params.get('user', None)
+        
+        if user_id is not None:
+            user = User.objects.get(pk=user_id)
+            completes = Completedlist.objects.filter(user=user)
         serializer = CompletedlistSerializer(completes, many=True)
         return Response(serializer.data)
     def create(self, request):
@@ -70,3 +75,4 @@ class CompletedlistSerializer(serializers.ModelSerializer):
     class Meta:
         model = Completedlist
         fields = ('id', 'trail', 'user', 'date')
+        depth = 1

@@ -13,6 +13,7 @@ class WantListView(ViewSet):
             Response -- JSON serialized game type
         """
         try:
+            
             wishlist = Wantlist.objects.get(pk=pk)
             serializer = WantListSerializer(wishlist)
             return Response(serializer.data)
@@ -26,7 +27,12 @@ class WantListView(ViewSet):
         Returns:
             Response -- JSON serialized list of game types
         """
-        wishlists = Wantlist.objects.all()
+        wishlists = Wantlist.objects.all() 
+        user_id = request.query_params.get('user', None)
+        if user_id is not None:
+            user = User.objects.get(pk=user_id)
+            wishlists = Wantlist.objects.filter(user=user)
+         
         serializer = WantListSerializer(wishlists, many=True)
         return Response(serializer.data)
     def create(self, request):
@@ -69,3 +75,4 @@ class WantListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Wantlist
         fields = ('id', 'trail', 'user')
+        depth = 1
