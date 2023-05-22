@@ -28,6 +28,11 @@ class ReviewView(ViewSet):
             Response -- JSON serialized list of game types
         """
         reviews = Review.objects.all()
+        user_id = request.query_params.get('user', None)
+        
+        if user_id is not None:
+            user = User.objects.get(pk=user_id)
+            reviews = Review.objects.filter(user=user)
         serializer = ReviewSerializer(reviews, many=True)
         return Response(serializer.data)
     def create(self, request):
@@ -75,3 +80,4 @@ class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
         fields = ('id', 'title', 'trail', 'user', 'description', 'rating', 'date', 'img')
+        depth = 1

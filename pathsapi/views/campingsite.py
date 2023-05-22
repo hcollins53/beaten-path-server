@@ -27,6 +27,10 @@ class CampingSiteView(ViewSet):
             Response -- JSON serialized list of game types
         """
         campingsites = CampingSite.objects.all()
+        trail_id = request.query_params.get('trail', None)
+        if trail_id is not None:
+            trail = Trail.objects.get(pk=trail_id)
+            campingsites = CampingSite.objects.filter(trail=trail)
         serializer = CampingSiteSerializer(campingsites, many=True)
         return Response(serializer.data)
     def create(self, request):
