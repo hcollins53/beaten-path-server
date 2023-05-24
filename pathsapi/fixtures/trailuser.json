@@ -1,0 +1,51 @@
+[
+    {
+        "model": "pathsapi.trailuser",
+        "pk": 1,
+        "fields": {
+            "user":1
+        }
+    },
+    {
+        "model": "pathsapi.trailuser",
+        "pk": 2,
+        "fields": {
+            "user":2
+        }
+    },
+    {
+        "model": "pathsapi.trailuser",
+        "pk": 3,
+        "fields": {
+            "user":3
+        }
+    },
+    {
+        "model": "pathsapi.trailuser",
+        "pk": 4,
+        "fields": {
+            "user":4
+        }
+    },
+    {
+        "model": "pathsapi.trailuser",
+        "pk": 5,
+        "fields": {
+            "user":5
+        }
+    },
+    {
+        "model": "pathsapi.trailuser",
+        "pk": 6,
+        "fields": {
+            "user":6
+        }
+    },
+    {
+        "model": "pathsapi.trailuser",
+        "pk": 7,
+        "fields": {
+            "user":7
+        }
+    }
+]
