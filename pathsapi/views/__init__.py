@@ -6,3 +6,4 @@ from .completedlist import CompletedListView
 from .review import ReviewView
 from .userprofile import UserProfileListView
 from .message import MessageView
+from .user import UserView

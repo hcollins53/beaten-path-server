@@ -27,6 +27,36 @@ class TrailView(ViewSet):
             Response -- JSON serialized list of game types
         """
         trails = Trail.objects.all()
+        difficulty_id = request.query_params.get('difficulty', None)
+        length_id = request.query_params.get('length', None)
+        elevationGain_id = request.query_params.get('elevationGain', None)
+        title = request.query_params.get('title', None)
+        if difficulty_id is not None:
+            trails = Trail.objects.filter(difficulty=difficulty_id)
+        if length_id is not None:
+            if length_id == "3":
+                max_length = 3
+                trails = Trail.objects.filter(length__lte=max_length)
+            if length_id == "6":
+                min_length = 3
+                max_length = 6
+                trails = Trail.objects.filter(length__gte=min_length, length__lte=max_length)
+            if length_id == "6.1":
+                min_length = 6
+                trails = Trail.objects.filter(length__gte=min_length)
+        if elevationGain_id is not None:
+            if elevationGain_id == "700":
+                max_elevationGain = 700
+                trails = Trail.objects.filter(elevationGain__lte=max_elevationGain)
+            elif elevationGain_id == "1500":
+                min_elevationGain = 700
+                max_elevationGain = 1500
+                trails = Trail.objects.filter(elevationGain__gte=min_elevationGain, elevationGain__lte=max_elevationGain)
+            elif elevationGain_id == "1501":
+                min_elevationGain = 1500
+                trails = Trail.objects.filter(elevationGain__gte=min_elevationGain)
+        if title is not None:
+            trails = Trail.objects.filter(name__icontains = title)
         serializer = TrailSerializer(trails, many=True)
         return Response(serializer.data)
     def create(self, request):

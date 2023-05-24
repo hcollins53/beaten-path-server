@@ -27,6 +27,10 @@ class UserProfileListView(ViewSet):
             Response -- JSON serialized list of game types
         """
         profiles = UserProfile.objects.all()
+        user_id = request.query_params.get('user', None)
+        if user_id is not None:
+            user = User.objects.get(pk=user_id)
+            profiles = UserProfile.objects.filter(user=user.id)
         serializer = UserProfileSerializer(profiles, many=True)
         return Response(serializer.data)
     def create(self, request):
@@ -45,8 +49,6 @@ class UserProfileListView(ViewSet):
             Response -- Empty body with 204 status code
         """
         profile = UserProfile.objects.get(pk=pk)
-        user = User.objects.get(pk=request.data["user"])
-        profile.user = user
         profile.image = request.data["image"]
         profile.favorite_hike = request.data["favorite_hike"]
         profile.description = request.data["description"]
@@ -71,3 +73,4 @@ class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserProfile
         fields = ('id', 'user', 'image', 'favorite_hike', 'description', 'area')
+        depth = 1

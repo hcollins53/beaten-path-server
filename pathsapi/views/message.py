@@ -27,6 +27,14 @@ class MessageView(ViewSet):
             Response -- JSON serialized list of game types
         """
         messages = Message.objects.all()
+        sender_id = request.query_params.get('sender', None)
+        receiver_id = request.query_params.get('receiver', None)
+        if sender_id is not None:
+            user = User.objects.get(pk=sender_id)
+            messages = Message.objects.filter(sender=user.id)
+        if receiver_id is not None:
+            user = User.objects.get(pk=receiver_id)
+            messages = Message.objects.filter(receiver=user.id)
         serializer = MessageSerializer(messages, many=True)
         return Response(serializer.data)
     def create(self, request):
