@@ -3,20 +3,23 @@ from rest_framework import status
 from rest_framework.test import APITestCase
 from rest_framework.authtoken.models import Token
 from django.contrib.auth.models import User
-from pathsapi.models.trail import Trail
+from pathsapi.models import Trail
 
 class TrailTests(APITestCase):
+    fixtures = ['users', 'tokens']
     def setUp(self):
         """
-        Set up for ProductTests
+        Set up for Tests
         """
-        self.user1 = User.objects.get(pk=1)
-        self.token = Token.objects.get(user=self.user1)
+        self.user1 = User.objects.create(username="hannah", first_name="hannah", last_name="collins", email="hannah@gmail.com")
+        
+        self.token = Token.objects.create(user=self.user1)
 
         self.client.credentials(
            HTTP_AUTHORIZATION=f'Token {self.token.key}')
 
-       # self.trail = Trail.objects.first()
+        self.trail = Trail.objects.create(name= "Wolf Trail", length= 3.5,elevationGain= 324,difficulty= "moderate",lat= 48.19024,
+                                          lon= -117.05302, img= "https://outthereoutdoors.com/wp-content/uploads/2021/05/view-from-Wolf-Trails--rotated.jpeg", permit= "No",fees= "free")
 
     def test_create_trail(self):
         """
@@ -35,7 +38,7 @@ class TrailTests(APITestCase):
             "fees": "free"
         }
         response = self.client.post('/trails', data, format='json')
-
+        
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertIsNotNone(response.data['id'])
 
@@ -44,11 +47,12 @@ class TrailTests(APITestCase):
         """
         Ensure we can update a trail.
         """
-        trail = Trail.objects.first()
+        trail = self.trail
+        
         data = {
-            "name": trail.name,
+            "name": "The Pearl",
             "length": trail.length,
-            "elevationGain": trail.description,
+            "elevationGain": trail.elevationGain,
             "difficulty": trail.difficulty,
             "lat": trail.lat,
             "lon": trail.lon,

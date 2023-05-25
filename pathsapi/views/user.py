@@ -29,11 +29,10 @@ class UserView(ViewSet):
         
         serializer = UserSerializer(users, many=True)
         return Response(serializer.data)
-   
 
 class UserSerializer(serializers.ModelSerializer):
     """JSON serializer for game types
     """
     class Meta:
         model = User
-        fields = ('id', "first_name", "last_name")
+        fields = ('id', "first_name", "last_name", "username")

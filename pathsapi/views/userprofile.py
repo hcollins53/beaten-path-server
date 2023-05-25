@@ -70,7 +70,9 @@ class CreateUserProfileSerializer(serializers.ModelSerializer):
 class UserProfileSerializer(serializers.ModelSerializer):
     """JSON serializer for game types
     """
+ 
     class Meta:
         model = UserProfile
         fields = ('id', 'user', 'image', 'favorite_hike', 'description', 'area')
         depth = 1
+    
