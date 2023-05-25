@@ -52,8 +52,8 @@ class ReviewView(ViewSet):
         """
         review = Review.objects.get(pk=pk)
         review.title = request.data["title"]
-        trail = Trail.objects.get(pk=request.data["trail"])
-        review.trail = trail
+        # trail = Trail.objects.get(pk=request.data["trail"])
+        # review.trail = trail
         user = User.objects.get(pk=request.data["user"])
         review.user = user
         review.description = request.data["description"]
