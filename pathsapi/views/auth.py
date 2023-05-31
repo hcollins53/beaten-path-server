@@ -31,11 +31,11 @@ def login_user(request):
             'token': token.key,
             'userId': user.id
         }
-        return Response(data)
+        return Response(data, status=status.HTTP_202_ACCEPTED)
     else:
         # Bad login details were provided. So we can't log the user in.
         data = { 'valid': False }
-        return Response(data, status=status.HTTP_202_ACCEPTED)
+        return Response(data, status=status.HTTP_204_NO_CONTENT)
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
