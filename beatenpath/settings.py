@@ -27,8 +27,6 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 DEBUG = os.getenv("DEBUG", "False")
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", 'off-the-beaten-path-laysx.ondigitalocean.app, beatenpath-app-pvyzi.ondigitalocean.app').split(",")
 DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False")
-CORS_ALLOWED_ORIGINS = ["https://off-the-beaten-path-laysx.ondigitalocean.app"]
-CORS_ALLOW_CREDENTIALS = True
 
 # Application definition
 
@@ -58,9 +56,9 @@ REST_FRAMEWORK = {
 }
 
 # THIS IS NEW
-CORS_ORIGIN_WHITELIST = [
-    "https://off-the-beaten-path-laysx.ondigitalocean.app"
-]
+CORS_ORIGIN_WHITELIST = (
+    "https://off-the-beaten-path-laysx.ondigitalocean.app",
+)
 
 # UPDATE THIS
 MIDDLEWARE = [
