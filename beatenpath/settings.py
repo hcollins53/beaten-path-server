@@ -25,7 +25,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False")
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", 'https://off-the-beaten-path-laysx.ondigitalocean.app').split(",")
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", 'off-the-beaten-path-laysx.ondigitalocean.app, beatenpath-app-pvyzi.ondigitalocean.app').split(",")
 DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False")
 CORS_ALLOWED_ORIGINS = ["https://off-the-beaten-path-laysx.ondigitalocean.app"]
 CORS_ALLOW_CREDENTIALS = True
